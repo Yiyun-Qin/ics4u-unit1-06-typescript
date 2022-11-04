@@ -10,6 +10,7 @@ import promptSync from 'prompt-sync'
  */ 
 
 const file1 = readFileSync('./set1.txt', 'utf-8')
+console.log(`File1 is ${file1}`)
 const file2 = readFileSync('./set2.txt', 'utf-8')
 const file3 = readFileSync('./set3.txt', 'utf-8')
 
@@ -20,7 +21,7 @@ let median: number
 let median1: number
 let median2: number
 const count = []
-let fileName: string = []
+let fileName: string = ''
 
 const chooseFile = prompt('Choose a file from file1, file2 and file3: ')
 if (chooseFile == 'file1') {
