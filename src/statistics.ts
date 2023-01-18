@@ -36,7 +36,7 @@ if (chooseFile == 'file1') {
 if (chooseFile == 'file1' || chooseFile == 'file2' || chooseFile == 'file3') {
   const array = fileName.split(/\r?\n/)
 
-  for (let loopCounter = 0; loopCounter < array.length + 9; loopCounter ++) {
+  for (let loopCounter = 0; loopCounter < array.length; loopCounter ++) {
     let singleNumber = array[array.length - 1]
     if (singleNumber != undefined) {
       let single = parseInt(singleNumber)
